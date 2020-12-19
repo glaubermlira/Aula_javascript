@@ -111,17 +111,17 @@
 // }
 
 
-function returnMessage (){
-    document.getElementById("message").innerHTML = "Seus dados foram carregados com sucesso!";  
+// function returnMessage (){
+//     document.getElementById("message").innerHTML = "Seus dados foram carregados com sucesso!";  
     
-    setTimeout(function(){
-        window.location.href = "http://127.0.0.1:5500/index.html";
-    }, 2000)
-}
+//     setTimeout(function(){
+//         window.location.href = "http://127.0.0.1:5500/index.html";
+//     }, 2000)
+// }
 
-function funcaoChange(elemento){
-    console.log(elemento.value);
-}
+// function funcaoChange(elemento){
+//     console.log(elemento.value);
+// }
 
 
 
@@ -134,3 +134,28 @@ function funcaoChange(elemento){
 
 // window.setTimeout('funcao()', intervalo_em_milisegundos);
 
+
+let user = {
+    name: "Glauber Mendes"
+}
+console.log(user);
+//Alterando propriedade do objeto
+
+user.name = "Outro nome qualquer"
+console.log(user);
+
+user['name'] = "Um outro nome 2"
+console.log(user);
+
+const prop = "name"
+user[prop] = "Proximo nome 3"
+console.log(user);
+
+
+const arrowFunc1 = () => "code here";
+const arrowFunc2 = (param) => {
+    return param
+}
+
+console.log(arrowFunc1());
+console.log(arrowFunc2("modificando paramentro"));
