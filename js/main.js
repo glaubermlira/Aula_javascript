@@ -135,27 +135,81 @@
 // window.setTimeout('funcao()', intervalo_em_milisegundos);
 
 
-let user = {
-    name: "Glauber Mendes"
+// let user = {
+//     name: "Glauber Mendes"
+// }
+// console.log(user);
+// //Alterando propriedade do objeto
+
+// user.name = "Outro nome qualquer"
+// console.log(user);
+
+// user['name'] = "Um outro nome 2"
+// console.log(user);
+
+// const prop = "name"
+// user[prop] = "Proximo nome 3"
+// console.log(user);
+
+
+// const arrowFunc1 = () => "code here";
+// const arrowFunc2 = (param) => {
+//     return param
+// }
+
+// console.log(arrowFunc1());
+// console.log(arrowFunc2("modificando paramentro"));
+
+
+//ORIENTAÇÃO A OBJETOS
+
+// function pessoa (name){
+//     this.name = name
+// }
+// const p = new pessoa ('Glauber')
+
+// console.log(p);
+
+// function pessoa (name) {
+//     this.name = name
+
+//     return {
+//         name: 'Rafaela'
+//     }
+// }
+// const p2 = new pessoa ('Glauber')
+// console.log(p2); //RETORNO É PRIORIDADE PRO OBJETO QUE FOI EXPLICITO;
+
+
+//HERANÇA
+// 'use strict';
+// function Animal(qtdPatas) {
+//     this.qtdPatas = qtdPatas
+// }
+
+// function Cachorro (morde) {
+//     Animal.call(this, 4)
+
+//     this.morde = morde
+// }
+
+// const pitbull = new Cachorro(true)
+
+// console.log(pitbull);
+
+//CLASSES
+class Animal {
+    constructor (qtdPatas){
+        this.qtdPatas = 4;
+    }
 }
-console.log(user);
-//Alterando propriedade do objeto
 
-user.name = "Outro nome qualquer"
-console.log(user);
-
-user['name'] = "Um outro nome 2"
-console.log(user);
-
-const prop = "name"
-user[prop] = "Proximo nome 3"
-console.log(user);
-
-
-const arrowFunc1 = () => "code here";
-const arrowFunc2 = (param) => {
-    return param
+class Cachorro extends Animal{
+    constructor (morde) {
+        super(4);
+        this.morde = morde;
+    }
 }
 
-console.log(arrowFunc1());
-console.log(arrowFunc2("modificando paramentro"));
+const pitbull = new Cachorro(false);
+console.log(pitbull);
