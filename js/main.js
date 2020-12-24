@@ -198,18 +198,78 @@
 // console.log(pitbull);
 
 //CLASSES
-class Animal {
-    constructor (qtdPatas){
-        this.qtdPatas = 4;
-    }
-}
+// class Animal {
+//     constructor (qtdPatas){
+//         this.qtdPatas = 4;
+//     }
+// }
 
-class Cachorro extends Animal{
-    constructor (morde) {
-        super(4);
-        this.morde = morde;
-    }
-}
+// class Cachorro extends Animal{
+//     constructor (morde) {
+//         super(4);
+//         this.morde = morde;
+//     }
+// }
 
-const pitbull = new Cachorro(false);
-console.log(pitbull);
+// const pitbull = new Cachorro(false);
+// console.log(pitbull);
+
+//MANIPULANDO ARRAYS
+
+// const personAndString = ['Glauber', 1, 6]
+// const persons = Array.of('Glauber', 'Rafaela', 'Bia')
+
+// console.log(personAndString)
+// console.log(persons)
+
+// INTERAÇÃO DE ELEMENTOS
+
+// const fruits = ['laranja','melão', 'abacaxi']
+
+// // fruits.forEach(fruit => console.log(fruit))
+// fruits.forEach((fruit, index) => console.log(fruit, index))
+
+// BUSCAR ELEMENTOS
+
+// const arr = [1, 2, 3, 4, 5]
+
+// const allValuesGreaterThanTwo = arr.filter(value => value > 2)
+// console.log(allValuesGreaterThanTwo);
+
+// console.log(arr.reverse())
+// console.log(arr.join('-'));
+
+// const alunos = [
+//     { nome: "Cris", nota: 10 },
+//     { nome: "Alexandre", nota: 7 },
+//     { nome: "Pablo", nota: 4 }
+//   ];
+  
+//   function alunoAprovado(aluno) {
+//     return aluno.nota >= 7;
+//   }
+  
+//   console.log(alunos.filter(alunoAprovado));
+//   console.log(alunos.some(alunoAprovado));
+//   console.log(alunos.every(alunoAprovado));
+
+// const frutas = ["amora", "laranja", "melancia", "acerola"];
+
+// console.log(frutas.sort())
+// frutas.reverse();
+
+// const pessoas = ["Cris", "Alexandre", "Pablo", "Cris"];
+
+// console.log(pessoas.indexOf("Cris"));
+// console.log(pessoas.findIndex(nome => nome === "Cris"));
+// console.log(pessoas.lastIndexOf("Cris"));
+// console.log(pessoas.find(nome => nome === "Cris"));
+
+const familiaPai = ["Avó Zeca", "Avô Aroldo"];
+const familiaMae = ["Avô Carlos", "Primo João Paulo"];
+
+const familiaFilho = familiaPai.concat(familiaMae);
+
+console.log(familiaPai);
+console.log(familiaMae);
+console.log(familiaFilho);
